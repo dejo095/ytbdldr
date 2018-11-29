@@ -68,19 +68,11 @@ app.post('/download', (req, res) => {
         });
 
         YD.on("error", function(error) {
-            console.log("ERROR", error);
+            throw error;
         });
 
         YD.on("progress", function(progress) {
-            console.log('progress', progress);
-            // var data = parseInt(progress.progress.percentage);
-            // setInterval(() => {
-            //     while (dData <= data) {
-            //         console.log("PROGRESS", data);
-            //         dData = data;
-            //     }
-            // }, 500);
-
+            console.log('progress', (parseFloat(progress.progress.percentage)).toFixed(2));
         });
 
 
