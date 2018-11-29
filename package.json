@@ -10,9 +10,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "cors": "^2.8.5",
+    "body-parser": "^1.18.3",
     "express": "^4.16.4",
     "fs-extra": "^7.0.1",
-    "youtube-mp3-downloader": "^0.5.3",
+    "hbs": "^4.0.1",
+    "hbs-utils": "0.0.4",
+    "youtube-mp3-downloader": "^0.5.3"
   }
 }
